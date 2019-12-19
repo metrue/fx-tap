@@ -2,18 +2,20 @@
 class Fx < Formula
   desc "fx, a simple but powerful Function as a Service build tools"
   homepage "https://github.com/metrue/fx"
-  version "0.8.77"
+  version "0.8.78-alpha.f3b6438"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/metrue/fx/releases/download/0.8.77/fx_0.8.77_macOS_64-bit.tar.gz"
-    sha256 "669b5aaa7a2bc3476f3aa62819c309d39ef0c6a7fb3a9e994b13c42d49d1686e"
+    url "https://github.com/metrue/fx/releases/download/0.8.78-alpha.f3b6438/fx_0.8.78-alpha.f3b6438_macOS_64-bit.tar.gz"
+    sha256 "32b28c263ae53eaaa4356bb1c99ef833532b9159b194155b26be0dde139607b3"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/metrue/fx/releases/download/0.8.77/fx_0.8.77_Tux_64-bit.tar.gz"
-      sha256 "631e78e43864b76334703ff54bec84c90c83cd7448cdef006aba66a845fb9bb9"
+      url "https://github.com/metrue/fx/releases/download/0.8.78-alpha.f3b6438/fx_0.8.78-alpha.f3b6438_Tux_64-bit.tar.gz"
+      sha256 "a05ea81698598784978a023a1bec23ffec52fbeeeb2cbf2055aabe6a4c9ab560"
     end
   end
+  
+  depends_on "docker"
 
   def install
     bin.install "fx"
