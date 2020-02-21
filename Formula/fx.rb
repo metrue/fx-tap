@@ -2,16 +2,16 @@
 class Fx < Formula
   desc "fx, a simple but powerful Function as a Service build tools"
   homepage "https://github.com/metrue/fx"
-  version "0.9.0-alpha.71174ea"
+  version "0.9.0-alpha.0068fb9"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/metrue/fx/releases/download/0.9.0-alpha.71174ea/fx_0.9.0-alpha.71174ea_macOS_64-bit.tar.gz"
-    sha256 "75aabe0527300068e65b84a9d77aada2c244090159f45d37c590c332b5c9f67c"
+    url "https://github.com/metrue/fx/releases/download/0.9.0-alpha.0068fb9/fx_0.9.0-alpha.0068fb9_macOS_64-bit.tar.gz"
+    sha256 "4c03abe813e893b2a39f68bd53c93d2508bb6ab38ac754ebcb489c28984f932d"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/metrue/fx/releases/download/0.9.0-alpha.71174ea/fx_0.9.0-alpha.71174ea_Tux_64-bit.tar.gz"
-      sha256 "7cf7ef5e3ce6b812118e4afdfa5141008b4726d85dc04d020f5f822ca76bbe96"
+      url "https://github.com/metrue/fx/releases/download/0.9.0-alpha.0068fb9/fx_0.9.0-alpha.0068fb9_Tux_64-bit.tar.gz"
+      sha256 "8bd3ea14f74a00e22a085bacfa524c3a0e1c228b1b7331d28dc4b888a955b96a"
     end
   end
   
