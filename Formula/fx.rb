@@ -2,16 +2,16 @@
 class Fx < Formula
   desc "fx, a simple but powerful Function as a Service build tools"
   homepage "https://github.com/metrue/fx"
-  version "0.9.47-alpha.7924f64"
+  version "0.9.47-alpha.5f554b4"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/metrue/fx/releases/download/0.9.47-alpha.7924f64/fx_0.9.47-alpha.7924f64_macOS_64-bit.tar.gz"
-    sha256 "1aad6dc8f0e586eaaf159f126c7c0854e508d2ace66004c4bfe3093783623713"
+    url "https://github.com/metrue/fx/releases/download/0.9.47-alpha.5f554b4/fx_0.9.47-alpha.5f554b4_macOS_64-bit.tar.gz"
+    sha256 "8356539e260d87ac320145a94325cff136ba2699c88806d236a26e2f835aaa9c"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/metrue/fx/releases/download/0.9.47-alpha.7924f64/fx_0.9.47-alpha.7924f64_Tux_64-bit.tar.gz"
-    sha256 "bb2412b00cad18985314a3f8d57e0664978f6fb26e713bcd593e2c4870a9eae9"
+    url "https://github.com/metrue/fx/releases/download/0.9.47-alpha.5f554b4/fx_0.9.47-alpha.5f554b4_Tux_64-bit.tar.gz"
+    sha256 "0263edae638453127a6f754d3fe601f373a04204def3cc898d9a8274f64b9906"
   end
 
   depends_on "docker"
